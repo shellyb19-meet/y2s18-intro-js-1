@@ -16,8 +16,25 @@ function getRandomInt(min, max) {
 
 var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
+var a=0;
+var i=0;
+while(a!=randomInt){
+	a=prompt("try to guess")
+	if (a==randomInt) {
+		a=randomInt
+		alert("YAY! YOU GUESS!! it took you " + i + " times to guess")
+	}
+	else{
+		i++
+		if(a>randomInt){
+			alert("you didn't guess right :( it's too hight..")
+		}
+		else{
+			alert("you didn't guess right :( it's too low..")
+		}
 
-// your code goes under here
+	}
+}
 
     </script>
 </body>
