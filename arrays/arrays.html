@@ -9,11 +9,17 @@
     <h1>JavaScript Arrays</h1>
 
     <script>
-var a=prompt("blah blah")
-a=a.split(", ")
-a.sort()
+//var a=prompt("blah blah")
+//a=a.split(", ")
+//a.sort()
+//alert(a)
+function sortNumber(a,b) {
+    return a - b;
+}
 
-alert(a)
+var numArray = [140000, 104, 99, 9, 78, 112233];
+numArray.sort(sortNumber);
+alert(numArray.join(","));
     </script>
 </body>
 
